@@ -1,0 +1,120 @@
+[⠊] Compiling...
+No files changed, compilation skipped
+Traces:
+  [1465470] AlysNFTScript::run()
+    ├─ [0] VM::envUint("PRIVATE_KEY") [staticcall]
+    │   └─ ← [Return] <env var value>
+    ├─ [0] VM::startBroadcast(<pk>)
+    │   └─ ← [Return] 
+    ├─ [1419708] → new AlysNFT@0x0841154dD6DB73F232eb1C21D0972A08A972D74C
+    │   ├─ emit OwnershipTransferred(previousOwner: 0x0000000000000000000000000000000000000000, newOwner: 0x09c2411420fB52F9705C01F25DFA488CDbA7C1bE)
+    │   └─ ← [Return] 6747 bytes of code
+    ├─ [0] console::log("AlysNFT deployed at:", AlysNFT: [0x0841154dD6DB73F232eb1C21D0972A08A972D74C]) [staticcall]
+    │   └─ ← [Stop] 
+    ├─ [0] VM::stopBroadcast()
+    │   └─ ← [Return] 
+    └─ ← [Stop] 
+
+
+Script ran successfully.
+
+== Logs ==
+  AlysNFT deployed at: 0x0841154dD6DB73F232eb1C21D0972A08A972D74C
+
+## Setting up 1 EVM.
+==========================
+Simulated On-chain Traces:
+
+  [1419708] → new AlysNFT@0x0841154dD6DB73F232eb1C21D0972A08A972D74C
+    ├─ emit OwnershipTransferred(previousOwner: 0x0000000000000000000000000000000000000000, newOwner: 0x09c2411420fB52F9705C01F25DFA488CDbA7C1bE)
+    └─ ← [Return] 6747 bytes of code
+
+
+==========================
+
+Chain 212121
+
+Estimated gas price: 0.000000015 gwei
+
+Estimated total gas used for script: 2050703
+
+Estimated amount required: 0.000000000030760545 ETH
+
+==========================
+
+##### 212121
+✅  [Success]Hash: 0x4280841d11d5d5738e3b2cb735261a2766d239d1e0a05791ee3a473aa8313599
+Contract Address: 0x0841154dD6DB73F232eb1C21D0972A08A972D74C
+Block: 98321
+Paid: 0.000000000012623408 ETH (1577926 gas * 0.000000008 gwei)
+
+✅ Sequence #1 on 212121 | Total Paid: 0.000000000012623408 ETH (1577926 gas * avg 0.000000008 gwei)
+                                                                                                                               
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+
+Transactions saved to: /home/soro-kuraima/Development/bitcoin-games-hackathon/defineX/definex-contracts/broadcast/AlysNFT.s.sol/212121/run-latest.json
+
+Sensitive values saved to: /home/soro-kuraima/Development/bitcoin-games-hackathon/defineX/definex-contracts/cache/AlysNFT.s.sol/212121/run-latest.json
+
+soro-kuraima@fedora:~/Development/bitcoin-games-hackathon/defineX/definex-contracts$ forge script script/NFTMarketplace.s.sol:NFTMarketplaceScript --rpc-url http://54.226.158.187 --broadcast -vvvv
+[⠊] Compiling...
+No files changed, compilation skipped
+Traces:
+  [755774] NFTMarketplaceScript::run()
+    ├─ [0] VM::envUint("PRIVATE_KEY") [staticcall]
+    │   └─ ← [Return] <env var value>
+    ├─ [0] VM::startBroadcast(<pk>)
+    │   └─ ← [Return] 
+    ├─ [710827] → new NFTMarketplace@0x26f87E6463f130F8EB3a271Fe9291Ef43894a23d
+    │   └─ ← [Return] 3440 bytes of code
+    ├─ [0] console::log("NFTMarketplace deployed at:", NFTMarketplace: [0x26f87E6463f130F8EB3a271Fe9291Ef43894a23d]) [staticcall]
+    │   └─ ← [Stop] 
+    ├─ [0] VM::stopBroadcast()
+    │   └─ ← [Return] 
+    └─ ← [Stop] 
+
+
+Script ran successfully.
+
+== Logs ==
+  NFTMarketplace deployed at: 0x26f87E6463f130F8EB3a271Fe9291Ef43894a23d
+
+## Setting up 1 EVM.
+==========================
+Simulated On-chain Traces:
+
+  [710827] → new NFTMarketplace@0x26f87E6463f130F8EB3a271Fe9291Ef43894a23d
+    └─ ← [Return] 3440 bytes of code
+
+
+==========================
+
+Chain 212121
+
+Estimated gas price: 0.000000015 gwei
+
+Estimated total gas used for script: 1055759
+
+Estimated amount required: 0.000000000015836385 ETH
+
+==========================
+
+##### 212121
+✅  [Success]Hash: 0x299301df70520f2476f471f21c680c02b5d6bd5007356edad215c1a68ab9568a
+Contract Address: 0x26f87E6463f130F8EB3a271Fe9291Ef43894a23d
+Block: 98345
+Paid: 0.000000000006498728 ETH (812341 gas * 0.000000008 gwei)
+
+✅ Sequence #1 on 212121 | Total Paid: 0.000000000006498728 ETH (812341 gas * avg 0.000000008 gwei)
+                                                                                                                               
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+
+Transactions saved to: /home/soro-kuraima/Development/bitcoin-games-hackathon/defineX/definex-contracts/broadcast/NFTMarketplace.s.sol/212121/run-latest.json
+
+Sensitive values saved to: /home/soro-kuraima/Development/bitcoin-games-hackathon/defineX/definex-contracts/cache/NFTMarketplace.s.sol/212121/run-latest.json
