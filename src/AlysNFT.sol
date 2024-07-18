@@ -65,6 +65,7 @@ contract AlysNFT is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable, 
         require(ownerOf(tokenId) != address(0), "Token does not exist");
         return _tokenUnits[tokenId];
     }
+
     function getTokenTicker(uint256 tokenId) public view returns (string memory) {
         require(ownerOf(tokenId) != address(0), "Token does not exist");
         return _tokenTickers[tokenId];
